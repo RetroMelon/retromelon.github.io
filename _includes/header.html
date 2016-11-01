@@ -1,0 +1,34 @@
+{% if page.url == '/index.html' or page.url == '/' %}
+{% else %}
+	<a class="back-button" href="/"></a>
+{% endif %}
+<aside class="logo">
+
+	{% if true %}
+		{% assign link = '/about' %}
+		{% assign prompt = 'About the Author' %}
+	{% else %}
+		{% assign link = '/' %}
+		{% assign prompt = 'Back to Home' %}
+	{% endif %}
+
+	<a class="profile-picture" href="{{ link | prepend: site.baseurl }}">
+		<img src="/assets/profile.jpg" class="gravatar">
+	</a>
+
+	{% if page.url == '/index.html' or page.url == '/' %}
+	<h1 class="header-name">Joe Frew</h1>
+	<nav>
+		<ul>
+			<li><a href="/about">about</a></li>
+			<li><a href="https://github.com/RetroMelon">github</a></li>
+			<li><a href="https://www.linkedin.com/in/joefrew">linkedin</a></li>
+			<li><a href="https://drive.google.com/open?id=0B8vT5_BQ0w0FbW5MU0EybU42ZDA">cv</a></li>
+		</ul>
+	</nav>
+	<section class="intro-section">
+		Final year Computing Science student at the University of Glasgow, with an interest in Cloud Native, ML and Robotics. Former President of the <a href="http://gutechsoc.com">Glasgow University Tech Society (GUTS)</a> and organiser of Scotland’s biggest hackathon. I also like to play guitar & harmonica.
+	</section>
+	{% endif %}
+
+</aside>

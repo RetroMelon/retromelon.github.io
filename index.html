@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<section>
+
+	<h3>Projects &#172;</h3>
+	{% for post in site.posts %}
+		{% if post.type == "project" and post.featured %}
+
+		<ul>
+			<li>
+				<div class="post-date">
+					<span>{{ post.date | date: "%d %b %y" }}</span>
+				</div>
+				<div class="title">
+					<a href="{{ post.url | prepend: site.baseurl }}" {% if post.featured %}class="featured"{% endif %}>{{ post.title }}</a>
+				</div>
+			</li>
+		</ul>
+
+	{% endif %}
+	{% endfor %}
+	{% for post in site.posts %}
+		{% if post.type == "project"%}
+			{% unless post.featured %}
+		<ul>
+			<li>
+				<div class="post-date">
+					<span>{{ post.date | date: "%d %b %y" }}</span>
+				</div>
+				<div class="title">
+					<a href="{{ post.url | prepend: site.baseurl }}" {% if post.featured %}class="featured"{% endif %}>{{ post.title }}</a>
+				</div>
+			</li>
+		</ul>
+
+		{% endunless %}
+	{% endif %}
+	{% endfor %}
+
+	<h3>Blog &#172;</h3>
+	{% for post in site.posts %}
+		{% unless post.type == "project" %}
+			<ul>
+				<li>
+					<div class="post-date">
+						<span>{{ post.date | date: "%d %b %y" }}</span>
+					</div>
+					<div class="title">
+						<a href="{{ post.url | prepend: site.baseurl }}" {% if post.featured %}class="featured"{% endif %}>{% if post.type %}<span class="post-type">{{post.type}}</span>{% endif %}{{ post.title }}</a>
+					</div>
+				</li>
+			</ul>
+		{% endunless %}
+	{% endfor %}
+
+</section>
