@@ -5,11 +5,11 @@ title: About & Contact
 
 Hello, I'm Joe.
 
-I'm a final year student studying for a BSc. Hons. at the University of Glasgow. As the former President and current Secretary of the <a href="http://gutechsoc.com">Glasgow University Tech Society (GUTS)</a> I've organised loads of weekend long events including <a href="http://gutechsoc.com/cdx">Glasgow's Cyber Defence Exercise</a> and <a href="http://gutechsoc.com/hackathon">Scotland's largest Hackathon</a>.
+I'm working as a Software Engineer on AWS for Amazon in Berlin. Previously, I graduated in Computing Science from the University of Glasgow. As the former President of the <a href="http://gutechsoc.com">Glasgow University Tech Society (GUTS)</a> I've organised loads of weekend long events for students including <a href="http://gutechsoc.com/cdx">Glasgow's Cyber Defence Exercise</a> and <a href="http://gutechsoc.com/hackathon">Scotland's largest Hackathon</a>.
 
-I have most experience in webdev, having developed and deployed apps in Django on Linux and Spring(Boot) on Cloud Foundry which are currently in use in industry. I like learning about <a href="https://pivotal.io/cloud-native">Cloud Native</a> and <a href="https://12factor.net/">12-factor apps</a> and other techniques for building scalable, maintainable cloud applications
+I like learning about techniques for building scalable, resillient and highly available cloud services.
 
-I'm also interested in machine learning, robotics and playing folky tunes on guitar & harmonica.
+I'm also interested in playing folky tunes on guitar & harmonica.
 
 ### Contact
 

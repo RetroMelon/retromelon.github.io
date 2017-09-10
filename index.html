@@ -39,20 +39,25 @@ layout: default
 	{% endif %}
 	{% endfor %}
 
-	<h3>Blog &#172;</h3>
-	{% for post in site.posts %}
-		{% unless post.type == "project" %}
-			<ul>
-				<li>
-					<div class="post-date">
-						<span>{{ post.date | date: "%d %b %y" }}</span>
-					</div>
-					<div class="title">
-						<a href="{{ post.url | prepend: site.baseurl }}" {% if post.featured %}class="featured"{% endif %}>{% if post.type %}<span class="post-type">{{post.type}}</span>{% endif %}{{ post.title }}</a>
-					</div>
-				</li>
-			</ul>
-		{% endunless %}
-	{% endfor %}
+
+	{% comment %}
+		You can uncomment this once you actually have any blogposts!
+		
+		<h3>Blog &#172;</h3>
+		{% for post in site.posts %}
+			{% unless post.type == "project" %}
+				<ul>
+					<li>
+						<div class="post-date">
+							<span>{{ post.date | date: "%d %b %y" }}</span>
+						</div>
+						<div class="title">
+							<a href="{{ post.url | prepend: site.baseurl }}" {% if post.featured %}class="featured"{% endif %}>{% if post.type %}<span class="post-type">{{post.type}}</span>{% endif %}{{ post.title }}</a>
+						</div>
+					</li>
+				</ul>
+			{% endunless %}
+		{% endfor %}
+	{% endcomment %}
 
 </section>
