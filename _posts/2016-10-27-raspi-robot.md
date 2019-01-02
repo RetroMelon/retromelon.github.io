@@ -1,8 +1,8 @@
 ---
-title: Browser Controlled RPi Robot w/ Live Video and Speech Synthesis
+title: Browser Controlled Raspberry Pi Robot with Live Video and Speech Synthesis
 updated: 2016-10-27 15:56
 type: project #making the type project will pull this into a different category.
-featured: 1
+#featured: 1
 ---
 <iframe class="youtube" src="https://www.youtube.com/embed/F3hmwtnsWZA" frameborder="0" allowfullscreen></iframe>
 
